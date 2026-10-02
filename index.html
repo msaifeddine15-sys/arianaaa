@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Ariana — From Saifeddine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+  <div class="ambient-decor" id="ambientDecor" aria-hidden="true"></div>
+
+  <!-- Opening screen -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="intro-stars"></div>
+    <div class="intro-characters">
+      <div class="intro-walk intro-ariana-wrap">
+        <div class="cartoon char char-ariana intro-char" id="introAriana"></div>
+      </div>
+      <div class="intro-heart-center" id="introHeart">
+        <span class="glow-heart">❤</span>
+      </div>
+      <div class="intro-walk intro-saif-wrap">
+        <div class="cartoon char char-saif intro-char" id="introSaif"></div>
+      </div>
+    </div>
+    <div class="intro-copy" id="introCopy">
+      <h1 class="intro-title">For Ariana <span class="heart-accent">❤</span></h1>
+      <p class="intro-from">From Saifeddine</p>
+      <p class="intro-tagline">Morocco met Switzerland… and somehow everything changed.</p>
+      <button type="button" class="btn btn-primary btn-glow" id="openStoryBtn">Open Our Story</button>
+    </div>
+  </div>
+
+  <div id="site" class="site hidden">
+    <header class="hero section" id="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">🇲🇦 ❤️ 🇨🇭</p>
+        <h1 class="hero-title">Saifeddine &amp; Ariana</h1>
+        <p class="hero-sub">Two countries. Two lives. One beautiful story.</p>
+        <p class="hero-funny">Morocco + Switzerland.<br>Unexpected combination.<br>Excellent results.</p>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </header>
+
+    <main>
+      <!-- Guitar scene -->
+      <section class="section scene-section" id="guitarScene">
+        <div class="container">
+          <div class="scene-stage guitar-stage reveal">
+            <div class="cartoon char char-ariana char--guitar" id="guitarAriana"></div>
+            <div class="music-notes-wrap" id="musicNotesWrap"></div>
+            <div class="cartoon char char-saif char--listening" id="guitarSaif"></div>
+          </div>
+          <div class="scene-text reveal">
+            <h2>My Favorite Concert</h2>
+            <ul class="concert-meta">
+              <li><strong>Artist:</strong> Ariana</li>
+              <li><strong>Audience:</strong> Saifeddine</li>
+              <li><strong>Tickets sold:</strong> 1</li>
+              <li><strong>Rating:</strong> 11/10</li>
+              <li><strong>Would attend again:</strong> Absolutely.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Distance scene -->
+      <section class="section scene-section" id="distanceScene">
+        <div class="container">
+          <div class="scene-stage distance-stage reveal">
+            <div class="distance-side distance-left">
+              <div class="cartoon char char-saif char--stand" id="distSaif"></div>
+              <span class="country-badge">🇲🇦 Morocco</span>
+            </div>
+            <svg class="distance-path" viewBox="0 0 400 80" aria-hidden="true">
+              <path class="path-dots" d="M20,40 Q200,10 380,40" fill="none"/>
+            </svg>
+            <span class="distance-heart-travel" aria-hidden="true">❤</span>
+            <div class="distance-side distance-right">
+              <div class="cartoon char char-ariana char--stand" id="distAriana"></div>
+              <span class="country-badge">🇨🇭 Switzerland</span>
+            </div>
+          </div>
+          <div class="scene-text reveal">
+            <h2>Distance is just geography.</h2>
+            <p class="funny-line">Approximately 1,800 km apart.</p>
+            <p class="funny-line">But somehow still close enough to annoy each other every day.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Messages scene -->
+      <section class="section scene-section" id="messagesScene">
+        <div class="container">
+          <div class="scene-stage messages-stage reveal">
+            <div class="message-room room-left">
+              <div class="cartoon char char-ariana char--phone" id="msgAriana"></div>
+              <div class="bubble-travel" id="bubblesLeft"></div>
+            </div>
+            <div class="message-room room-right">
+              <div class="cartoon char char-saif char--phone" id="msgSaif"></div>
+              <div class="bubble-travel" id="bubblesRight"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Argument scene -->
+      <section class="section scene-section" id="argumentScene">
+        <div class="container">
+          <div class="scene-stage argument-stage reveal">
+            <div class="cartoon char char-ariana char--angry" id="argAriana"></div>
+            <div class="cartoon char char-saif char--signs" id="argSaif">
+              <div class="sorry-sign" id="sorrySign">Sorry 😭</div>
+            </div>
+          </div>
+          <div class="protocol reveal">
+            <h3>Relationship problem-solving protocol</h3>
+            <ol>
+              <li>Apologize</li>
+              <li>Apologize again</li>
+              <li>Food</li>
+              <li>Hug</li>
+              <li>Ariana wins</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hug scene -->
+      <section class="section scene-section" id="hugScene">
+        <div class="container">
+          <div class="scene-stage hug-stage reveal">
+            <div class="hug-characters" id="hugCharacters">
+              <div class="cartoon char char-saif char--hug-walk" id="hugSaif"></div>
+              <div class="cartoon char char-ariana char--hug-walk" id="hugAriana"></div>
+              <div class="hug-heart-big" id="hugHeartBig">❤</div>
+            </div>
+          </div>
+          <div class="scene-text reveal">
+            <h2>Best place in the world.</h2>
+            <p>Right here.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Story + memories: photos for us, words for how much I love you -->
+      <section class="section" id="ourStory">
+        <div class="container">
+          <h2 class="section-title reveal">Our Story</h2>
+          <p class="section-lead reveal">These photos are just us being us. The words are me telling you how much I love you.</p>
+          <div class="timeline" id="ourStoryTimeline"></div>
+        </div>
+      </section>
+
+      <!-- Music -->
+      <section class="section" id="musicSection">
+        <div class="container">
+          <h2 class="section-title reveal">Our Soundtrack</h2>
+          <div class="music-player-wrap reveal">
+            <div class="music-characters">
+              <div class="cartoon char char-ariana char--guitar char--small" id="musicAriana"></div>
+              <div class="cartoon char char-saif char--listening char--small" id="musicSaif"></div>
+            </div>
+            <div class="music-player glass-card">
+              <p class="now-playing" id="nowPlaying">Loading soundtrack…</p>
+              <div class="visualizer" id="visualizer" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="progress-wrap">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="progressBar" min="0" max="100" value="0" aria-label="Song progress">
+                <span id="duration">0:00</span>
+              </div>
+              <div class="player-controls">
+                <button type="button" id="prevTrack" aria-label="Previous">⏮</button>
+                <button type="button" id="playPause" aria-label="Play">▶</button>
+                <button type="button" id="nextTrack" aria-label="Next">⏭</button>
+              </div>
+              <label class="volume-label">Volume
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7">
+              </label>
+              <audio id="audioPlayer" preload="metadata"></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="section" id="stats">
+        <div class="container">
+          <h2 class="section-title reveal">Official Relationship Statistics</h2>
+          <div class="stats-grid reveal" id="statsGrid"></div>
+        </div>
+      </section>
+
+      <!-- Love question -->
+      <section class="section" id="loveQuestion">
+        <div class="container glass-card reveal love-question-card">
+          <h2>Do you love Saifeddine?</h2>
+          <div class="love-buttons">
+            <button type="button" class="btn btn-primary" id="yesLove">YES ❤️</button>
+            <button type="button" class="btn btn-ghost" id="noLove">NO</button>
+          </div>
+          <p class="love-result hidden" id="loveResult">I knew it 😌❤️</p>
+        </div>
+      </section>
+
+      <!-- Heart game -->
+      <section class="section" id="heartGame">
+        <div class="container">
+          <h2 class="section-title reveal">Catch Saifeddine's Heart</h2>
+          <p class="game-score reveal">Score: <span id="heartScore">0</span></p>
+          <p class="game-message reveal" id="heartGameMsg"></p>
+          <div class="heart-game-area glass-card reveal" id="heartGameArea"></div>
+        </div>
+      </section>
+
+      <!-- Quiz -->
+      <section class="section" id="quiz">
+        <div class="container glass-card reveal">
+          <h2 class="section-title">Who is more likely?</h2>
+          <p class="quiz-question" id="quizQuestion"></p>
+          <div class="quiz-buttons">
+            <button type="button" class="btn btn-primary" data-pick="Ariana">Ariana</button>
+            <button type="button" class="btn btn-primary" data-pick="Saifeddine">Saifeddine</button>
+          </div>
+          <p class="quiz-result" id="quizResult"></p>
+        </div>
+      </section>
+
+      <!-- Message generator -->
+      <section class="section" id="messagesGen">
+        <div class="container glass-card reveal">
+          <button type="button" class="btn btn-primary" id="whyLoveBtn">Why does Saifeddine love Ariana?</button>
+          <p class="love-message-display" id="loveMessageDisplay"></p>
+        </div>
+      </section>
+
+      <!-- Mood -->
+      <section class="section" id="mood">
+        <div class="container glass-card reveal">
+          <h2 class="section-title">How are you feeling today?</h2>
+          <div class="mood-buttons" id="moodButtons"></div>
+          <div class="mood-response" id="moodResponse"></div>
+        </div>
+      </section>
+
+      <!-- Things I love -->
+      <section class="section" id="thingsLove">
+        <div class="container">
+          <h2 class="section-title reveal">Things I Love About You</h2>
+          <div class="love-cards" id="loveCards"></div>
+        </div>
+      </section>
+
+      <!-- Love letter -->
+      <section class="section" id="loveLetter">
+        <div class="container reveal">
+          <div class="envelope-wrap" id="envelopeWrap">
+            <div class="envelope" id="envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body">
+                <p>There's something for you.</p>
+                <button type="button" class="btn btn-primary" id="openLetterBtn">Open Letter</button>
+              </div>
+              <div class="letter-content hidden" id="letterContent">
+                <div class="letter-paper">
+                  <p>My Ariana,</p>
+                  <p>Some people enter your life and somehow everything starts feeling different.</p>
+                  <p>You became part of my thoughts, my days, my plans, my smiles and even the moments where I am doing absolutely nothing.</p>
+                  <p>Two countries were never supposed to feel this close.</p>
+                  <p>But then there was you.</p>
+                  <p>And suddenly distance became just a number.</p>
+                  <p>I don't know exactly what every future chapter will look like.</p>
+                  <p>But I know who I want beside me while we write them.</p>
+                  <p>You.</p>
+                  <p>Always you.</p>
+                  <p class="letter-sign">— Saifeddine ❤️</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future -->
+      <section class="section" id="future">
+        <div class="container reveal">
+          <h2 class="section-title">Loading Our Future...</h2>
+          <div class="future-bars" id="futureBars"></div>
+          <p class="future-note">Estimated completion date: Never.</p>
+        </div>
+      </section>
+
+      <!-- Bucket list -->
+      <section class="section" id="bucket">
+        <div class="container">
+          <h2 class="section-title reveal">Our Bucket List</h2>
+          <div class="bucket-grid" id="bucketGrid"></div>
+        </div>
+      </section>
+
+      <!-- Final -->
+      <section class="section final-section" id="final">
+        <div class="final-bg" id="finalBg"></div>
+        <div class="final-overlay"></div>
+        <div class="final-content">
+          <p class="final-line reveal-final" data-delay="0">If I had to choose again...</p>
+          <p class="final-line reveal-final" data-delay="1">I'd still choose you.</p>
+          <p class="final-line reveal-final" data-delay="2">Every single time.</p>
+          <p class="final-line reveal-final" data-delay="3">From Morocco to Switzerland.</p>
+          <p class="final-line reveal-final" data-delay="4">From today to whatever comes next.</p>
+          <p class="final-line final-love reveal-final" data-delay="5">I love you, Ariana.</p>
+          <p class="final-sign reveal-final" data-delay="6">— Saifeddine ❤️</p>
+          <button type="button" class="btn btn-primary btn-glow reveal-final" data-delay="7" id="oneLastThing">One Last Thing...</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made with love in Morocco &amp; Switzerland · For Ariana</p>
+    </footer>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo view">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <img src="" alt="Memory" id="lightboxImg">
+  </div>
+
+  <!-- Easter egg toast -->
+  <div class="secret-toast hidden" id="secretToast"></div>
+
+  <!-- Final overlay animation -->
+  <div class="final-overlay-screen hidden" id="finalOverlay">
+    <div class="celebration-particles" id="celebrationParticles"></div>
+    <p class="celebration-text hidden" id="celebrationText">You are my favorite chapter. ❤️</p>
+    <div class="final-cartoon-scene hidden" id="finalCartoonScene">
+      <div class="cartoon char char-ariana char--guitar" id="finalAriana"></div>
+      <div class="cartoon char char-saif char--walk-to" id="finalSaif"></div>
+      <div class="final-scene-heart hidden" id="finalSceneHeart">❤</div>
+      <p class="tbc hidden" id="tbcText">To be continued...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
